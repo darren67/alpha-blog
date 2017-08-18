@@ -1,0 +1,19 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: alpha-dev-DB
+  pool: 5
+  username: 
+  password:
+  timeout: 5000
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: alpha-test-DB
+  pool: 5
+  username: 
+  password:
+  timeout: 5000
