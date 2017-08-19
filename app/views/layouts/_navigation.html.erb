@@ -18,6 +18,11 @@
                     IN+
                 </div>
             </li>
+            <li class="<%= 'active' if current_page?('/home/minor') %>">
+                <%= link_to "/articles/new" do %>
+                <i class="fa fa-desktop"></i> <span class="nav-label">New Article</span>
+                <% end %>
+            </li>
             <li class="<%= 'active' if current_page?('/') %>">
                 <%= link_to "/" do %>
                 <i class="fa fa-laptop"></i> <span class="nav-label">Main page</span>

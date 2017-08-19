@@ -1,0 +1,22 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+<h1>Create a new article</h1>
+<hr>
+
+
+<div class="form-group">
+<%= form_for :article, url: articles_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title, class:'form-control' %>
+  </p>
+ 
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description, class:'form-control' %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Create Article", class:"btn btn-primary" %>
+  </p>
+<% end %>
+</div>
